@@ -1,48 +1,23 @@
-function sendMessage(){
+function calculatePremium(){
 
-const input =
-document.getElementById("userInput");
+const product =
+document.getElementById("product").value;
 
-const chat =
-document.getElementById("chat-box");
+let premium = "Rp50.000";
 
-const userMessage = input.value;
-
-if(userMessage === "") return;
-
-chat.innerHTML += `
-<p><strong>Anda:</strong> ${userMessage}</p>
-`;
-
-let response =
-"Silakan pilih Velora Smart Protect untuk perlindungan kesehatan komprehensif.";
-
-if(userMessage.toLowerCase().includes("klaim")){
-response =
-"Klaim dapat diajukan melalui aplikasi Velora atau rumah sakit rekanan.";
+if(product==="Velora Smart Protect"){
+premium="Rp100.000";
 }
 
-if(userMessage.toLowerCase().includes("telemedicine")){
-response =
-"Velora menyediakan layanan telemedicine 24 jam melalui aplikasi.";
+if(product==="Velora Family Shield"){
+premium="Rp250.000";
 }
 
-if(userMessage.toLowerCase().includes("premi")){
-response =
-"Premi mulai dari Rp150.000 per bulan sesuai usia tertanggung.";
+if(product==="Velora Executive Care"){
+premium="Rp500.000";
 }
 
-chat.innerHTML += `
-<p><strong>Velora AI:</strong> ${response}</p>
-`;
-
-input.value = "";
-
-chat.scrollTop =
-chat.scrollHeight;
+document.getElementById("premiumResult")
+.innerHTML=
+"Estimasi Premi: "+premium+"/bulan";
 }
-
-document.getElementById("darkModeBtn")
-.addEventListener("click",function(){
-document.body.classList.toggle("dark");
-});
