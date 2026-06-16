@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -7,7 +8,6 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
@@ -16,250 +16,238 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar">
-    <div class="logo">
-        <i class="fa-solid fa-heart-pulse"></i>
-        Velora Health
-    </div>
 
-    <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#products">Produk</a></li>
-        <li><a href="#benefits">Manfaat</a></li>
-        <li><a href="#claim">Klaim</a></li>
-        <li><a href="#contact">Kontak</a></li>
-    </ul>
+<div class="logo">
+Velora Health Insurance
+</div>
 
-    <button id="darkModeBtn">
-        <i class="fa-solid fa-moon"></i>
-    </button>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#premium">Simulasi Premi</a></li>
+<li><a href="#policy">E-Policy Center</a></li>
+<li><a href="#claim">Claim Center</a></li>
+<li><a href="#news">News & Insights</a></li>
+<li><a href="#leadership">Leadership Team</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
 </nav>
 
-<!-- HERO -->
 <section class="hero" id="home">
 
 <div class="hero-content">
 
-<h1>
-Protect Your Health <br>
-with Velora Insurance
-</h1>
+<h1>Your Health, Our Priority</h1>
 
 <p>
-Asuransi kesehatan digital modern dengan telemedicine,
-klaim cashless, e-card digital dan perlindungan kesehatan
-yang mudah diakses kapan saja.
+Perlindungan kesehatan digital modern untuk individu,
+keluarga dan profesional.
 </p>
 
-<div class="hero-buttons">
 <a href="#products" class="btn-primary">
-Lihat Produk
+Get Protected Now
 </a>
 
-<a href="#chatbot" class="btn-secondary">
-Velora AI
-</a>
-</div>
-
-</div>
-
-<div class="hero-image">
-<i class="fa-solid fa-shield-heart"></i>
 </div>
 
 </section>
-
-<!-- STATS -->
 
 <section class="stats">
 
 <div class="stat-card">
-<h2>50 Juta+</h2>
-<p>Limit Tahunan</p>
+<h2>50.000+</h2>
+<p>Nasabah Aktif</p>
+</div>
+
+<div class="stat-card">
+<h2>98%</h2>
+<p>Claim Approval</p>
+</div>
+
+<div class="stat-card">
+<h2>1.000+</h2>
+<p>Partner Hospitals</p>
 </div>
 
 <div class="stat-card">
 <h2>24/7</h2>
-<p>Telemedicine</p>
-</div>
-
-<div class="stat-card">
-<h2>14 Hari</h2>
-<p>Proses Klaim</p>
-</div>
-
-<div class="stat-card">
-<h2>100%</h2>
-<p>Digital Service</p>
+<p>Customer Support</p>
 </div>
 
 </section>
-
-<!-- ABOUT -->
 
 <section id="about" class="section">
 
 <h2 class="section-title">
-Tentang Velora
+About Velora
 </h2>
 
-<p class="center-text">
-
-Velora Health Insurance merupakan perusahaan asuransi
-kesehatan digital yang menyediakan perlindungan kesehatan
-berbasis teknologi dengan sistem pelayanan yang cepat,
-transparan dan mudah diakses melalui aplikasi digital.
-
+<p>
+Velora Health Insurance adalah perusahaan asuransi
+kesehatan digital yang menyediakan layanan perlindungan
+kesehatan berbasis teknologi dengan pelayanan cepat,
+transparan dan mudah diakses.
 </p>
 
 </section>
 
-<!-- PRODUCTS -->
-
 <section id="products" class="section">
 
 <h2 class="section-title">
-Produk Unggulan
+Products
 </h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Velora Basic Care</h3>
-<p>Perlindungan kesehatan dasar untuk mahasiswa dan individu muda.</p>
+<p>Untuk mahasiswa dan individu muda.</p>
 </div>
 
 <div class="card">
 <h3>Velora Smart Protect</h3>
-<p>Produk perlindungan komprehensif dengan manfaat lengkap.</p>
+<p>Untuk profesional dan karyawan.</p>
 </div>
 
 <div class="card">
 <h3>Velora Family Shield</h3>
-<p>Perlindungan keluarga dalam satu polis.</p>
+<p>Perlindungan kesehatan keluarga.</p>
 </div>
 
 <div class="card">
-<h3>Velora Corporate Health</h3>
-<p>Program kesehatan perusahaan dan karyawan.</p>
+<h3>Velora Executive Care</h3>
+<p>Perlindungan premium dengan manfaat VIP.</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- BENEFITS -->
-
-<section id="benefits" class="section">
+<section id="premium" class="section">
 
 <h2 class="section-title">
-Manfaat Utama
+Simulasi Premi
+</h2>
+
+<select id="product">
+<option>Velora Basic Care</option>
+<option>Velora Smart Protect</option>
+<option>Velora Family Shield</option>
+<option>Velora Executive Care</option>
+</select>
+
+<button onclick="calculatePremium()">
+Hitung Premi
+</button>
+
+<h3 id="premiumResult"></h3>
+
+</section>
+
+<section id="policy" class="section">
+
+<h2 class="section-title">
+E-Policy Center
 </h2>
 
 <div class="cards">
 
 <div class="card">
-<i class="fa-solid fa-hospital"></i>
-<h3>Rawat Inap</h3>
-<p>Limit hingga Rp50.000.000 per tahun.</p>
+<h3>Underwriting</h3>
 </div>
 
 <div class="card">
-<i class="fa-solid fa-user-doctor"></i>
-<h3>Rawat Jalan</h3>
-<p>Konsultasi dokter umum dan spesialis.</p>
+<h3>Renewal Polis</h3>
 </div>
 
 <div class="card">
-<i class="fa-solid fa-video"></i>
-<h3>Telemedicine</h3>
-<p>12 kali konsultasi online per tahun.</p>
+<h3>Layanan Digital</h3>
 </div>
 
 <div class="card">
-<i class="fa-solid fa-truck-medical"></i>
-<h3>Ambulans</h3>
-<p>Perlindungan darurat hingga Rp2.000.000.</p>
+<h3>Emergency Services</h3>
+</div>
+
+<div class="card">
+<h3>Coordination of Benefits</h3>
+</div>
+
+<div class="card">
+<h3>Subrogasi</h3>
 </div>
 
 </div>
 
 </section>
 
-<!-- CLAIM -->
-
-<section id="claim" class="section">
+<section id="leadership" class="section">
 
 <h2 class="section-title">
-Prosedur Klaim
+Leadership Team
 </h2>
 
-<div class="claim-box">
+<div class="cards">
 
-<h3>Klaim Cashless</h3>
-
-<ol>
-<li>Datangi rumah sakit rekanan.</li>
-<li>Tunjukkan e-card Velora.</li>
-<li>Verifikasi data.</li>
-<li>Pelayanan langsung tanpa pembayaran tunai.</li>
-</ol>
-
+<div class="card">
+<h3>Rima Puji Astuti</h3>
+<p>Direktur Utama</p>
 </div>
 
-<div class="claim-box">
+<div class="card">
+<h3>Inur Rahmadami</h3>
+<p>Manajer Pemasaran & Relasi Nasabah</p>
+</div>
 
-<h3>Klaim Reimbursement</h3>
+<div class="card">
+<h3>Mutia Nur Mahya</h3>
+<p>Manajer Underwriting & Akseptasi</p>
+</div>
 
-<ol>
-<li>Upload dokumen melalui aplikasi.</li>
-<li>Lengkapi formulir klaim.</li>
-<li>Verifikasi dokumen.</li>
-<li>Dana ditransfer maksimal 14 hari kerja.</li>
-</ol>
+<div class="card">
+<h3>Siti Nur Halimah</h3>
+<p>Manajer Klaim & Survei</p>
+</div>
+
+<div class="card">
+<h3>Maria Rind Toji</h3>
+<p>Manajer Keuangan, SDM & Umum</p>
+</div>
 
 </div>
 
 </section>
 
-<!-- AI CHATBOT -->
-
-<section id="chatbot" class="section">
+<section id="news" class="section">
 
 <h2 class="section-title">
-Velora AI Assistant
+News & Insights
 </h2>
 
-<div class="chat-container">
+<div class="cards">
 
-<div id="chat-box"></div>
+<div class="card">
+<h3>Pentingnya Asuransi Kesehatan</h3>
+</div>
 
-<div class="chat-input">
+<div class="card">
+<h3>Tips Mengelola Keuangan Keluarga</h3>
+</div>
 
-<input
-type="text"
-id="userInput"
-placeholder="Tanyakan produk atau klaim..."
->
-
-<button onclick="sendMessage()">
-Kirim
-</button>
-
+<div class="card">
+<h3>Pencegahan Penyakit Jantung</h3>
 </div>
 
 </div>
 
 </section>
-
-<!-- CONTACT -->
 
 <section id="contact" class="section">
 
 <h2 class="section-title">
-Hubungi Kami
+Contact Us
 </h2>
 
 <form class="contact-form">
@@ -270,9 +258,7 @@ Hubungi Kami
 
 <textarea placeholder="Pesan"></textarea>
 
-<button type="submit">
-Kirim
-</button>
+<button>Kirim</button>
 
 </form>
 
@@ -282,9 +268,9 @@ Kirim
 
 <h3>Velora Health Insurance</h3>
 
-<p>Care, Beautifully Simplified.</p>
+<p>Your Health, Our Priority</p>
 
-<p>© 2026 All Rights Reserved</p>
+<p>© 2026 Velora Health Insurance</p>
 
 </footer>
 
