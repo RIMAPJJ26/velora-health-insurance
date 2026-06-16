@@ -1,57 +1,136 @@
 <!DOCTYPE html>
-
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Velora Health Insurance</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{
+font-family:Arial,sans-serif;
+margin:0;
+padding:0;
+background:#f8fafc;
+}
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+nav{
+background:#0f172a;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:white;
+padding:100px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.btn{
+background:#22c55e;
+padding:12px 25px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+display:inline-block;
+margin-top:15px;
+}
+
+.section{
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+padding:40px;
+}
+
+.stat-card{
+background:white;
+padding:25px;
+text-align:center;
+border-radius:15px;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:40px;
+}
+</style>
 
 </head>
 <body>
 
-<nav class="navbar">
+<nav>
 
-<div class="logo">
-Velora Health Insurance
-</div>
+<h2>Velora Health Insurance</h2>
 
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About Us</a></li>
+<ul>
+<li><a href="#about">About</a></li>
 <li><a href="#products">Products</a></li>
-<li><a href="#premium">Simulasi Premi</a></li>
-<li><a href="#policy">E-Policy Center</a></li>
-<li><a href="#claim">Claim Center</a></li>
-<li><a href="#news">News & Insights</a></li>
-<li><a href="#leadership">Leadership Team</a></li>
+<li><a href="#premium">Premium</a></li>
+<li><a href="#policy">Policy</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 
 </nav>
 
-<section class="hero" id="home">
-
-<div class="hero-content">
+<section class="hero">
 
 <h1>Your Health, Our Priority</h1>
 
 <p>
-Perlindungan kesehatan digital modern untuk individu,
-keluarga dan profesional.
+Digital Health Protection for Individuals, Families and Professionals
 </p>
 
-<a href="#products" class="btn-primary">
+<a href="#products" class="btn">
 Get Protected Now
 </a>
-
-</div>
 
 </section>
 
@@ -59,7 +138,7 @@ Get Protected Now
 
 <div class="stat-card">
 <h2>50.000+</h2>
-<p>Nasabah Aktif</p>
+<p>Customers</p>
 </div>
 
 <div class="stat-card">
@@ -68,58 +147,52 @@ Get Protected Now
 </div>
 
 <div class="stat-card">
-<h2>1.000+</h2>
-<p>Partner Hospitals</p>
+<h2>1000+</h2>
+<p>Hospitals</p>
 </div>
 
 <div class="stat-card">
 <h2>24/7</h2>
-<p>Customer Support</p>
+<p>Support</p>
 </div>
 
 </section>
 
 <section id="about" class="section">
 
-<h2 class="section-title">
-About Velora
-</h2>
+<h2 class="section-title">About Velora</h2>
 
 <p>
-Velora Health Insurance adalah perusahaan asuransi
-kesehatan digital yang menyediakan layanan perlindungan
-kesehatan berbasis teknologi dengan pelayanan cepat,
-transparan dan mudah diakses.
+Velora Health Insurance provides digital healthcare protection
+with fast claims, transparent services and extensive hospital networks.
 </p>
 
 </section>
 
 <section id="products" class="section">
 
-<h2 class="section-title">
-Products
-</h2>
+<h2 class="section-title">Products</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Velora Basic Care</h3>
-<p>Untuk mahasiswa dan individu muda.</p>
+<p>Students and young adults.</p>
 </div>
 
 <div class="card">
 <h3>Velora Smart Protect</h3>
-<p>Untuk profesional dan karyawan.</p>
+<p>Professionals and employees.</p>
 </div>
 
 <div class="card">
 <h3>Velora Family Shield</h3>
-<p>Perlindungan kesehatan keluarga.</p>
+<p>Comprehensive family protection.</p>
 </div>
 
 <div class="card">
 <h3>Velora Executive Care</h3>
-<p>Perlindungan premium dengan manfaat VIP.</p>
+<p>Premium healthcare with VIP benefits.</p>
 </div>
 
 </div>
@@ -128,9 +201,7 @@ Products
 
 <section id="premium" class="section">
 
-<h2 class="section-title">
-Simulasi Premi
-</h2>
+<h2 class="section-title">Premium Calculator</h2>
 
 <select id="product">
 <option>Velora Basic Care</option>
@@ -140,7 +211,7 @@ Simulasi Premi
 </select>
 
 <button onclick="calculatePremium()">
-Hitung Premi
+Calculate Premium
 </button>
 
 <h3 id="premiumResult"></h3>
@@ -149,41 +220,35 @@ Hitung Premi
 
 <section id="policy" class="section">
 
-<h2 class="section-title">
-E-Policy Center
-</h2>
+<h2 class="section-title">E-Policy Center</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Underwriting</h3>
+<p>Risk assessment process.</p>
 </div>
 
 <div class="card">
-<h3>Renewal Polis</h3>
+<h3>Policy Renewal</h3>
+<p>Renew your coverage easily.</p>
 </div>
 
 <div class="card">
-<h3>Layanan Digital</h3>
+<h3>Digital Services</h3>
+<p>E-Policy, online claims and payment.</p>
 </div>
 
 <div class="card">
 <h3>Emergency Services</h3>
-</div>
-
-<div class="card">
-<h3>Coordination of Benefits</h3>
-</div>
-
-<div class="card">
-<h3>Subrogasi</h3>
+<p>24/7 emergency healthcare support.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="leadership" class="section">
+<section class="section">
 
 <h2 class="section-title">
 Leadership Team
@@ -193,34 +258,34 @@ Leadership Team
 
 <div class="card">
 <h3>Rima Puji Astuti</h3>
-<p>Direktur Utama</p>
+<p>President Director</p>
 </div>
 
 <div class="card">
 <h3>Inur Rahmadami</h3>
-<p>Manajer Pemasaran & Relasi Nasabah</p>
+<p>Marketing & Customer Relations Manager</p>
 </div>
 
 <div class="card">
 <h3>Mutia Nur Mahya</h3>
-<p>Manajer Underwriting & Akseptasi</p>
+<p>Underwriting & Acceptance Manager</p>
 </div>
 
 <div class="card">
 <h3>Siti Nur Halimah</h3>
-<p>Manajer Klaim & Survei</p>
+<p>Claims & Survey Manager</p>
 </div>
 
 <div class="card">
 <h3>Maria Rind Toji</h3>
-<p>Manajer Keuangan, SDM & Umum</p>
+<p>Finance, HR & General Affairs Manager</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="news" class="section">
+<section class="section">
 
 <h2 class="section-title">
 News & Insights
@@ -233,11 +298,11 @@ News & Insights
 </div>
 
 <div class="card">
-<h3>Tips Mengelola Keuangan Keluarga</h3>
+<h3>Tips Mengatur Keuangan Keluarga</h3>
 </div>
 
 <div class="card">
-<h3>Pencegahan Penyakit Jantung</h3>
+<h3>Manfaat Pemeriksaan Kesehatan Rutin</h3>
 </div>
 
 </div>
@@ -250,17 +315,8 @@ News & Insights
 Contact Us
 </h2>
 
-<form class="contact-form">
-
-<input type="text" placeholder="Nama">
-
-<input type="email" placeholder="Email">
-
-<textarea placeholder="Pesan"></textarea>
-
-<button>Kirim</button>
-
-</form>
+<p>Email: info@velorahealthinsurance.com</p>
+<p>WhatsApp: +62 812 3456 7890</p>
 
 </section>
 
